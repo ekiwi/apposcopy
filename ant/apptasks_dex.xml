@@ -19,7 +19,7 @@
 		  failonerror="true">
 	  <jvmarg value="-ea"/>
 	  <classpath>
-		<pathelement location="${stamp.dir}/lib/apktool-cli-1.5.3-SNAPSHOT.jar"/>
+		<pathelement location="${stamp.dir}/lib/apktool_2.3.0.jar"/>
       </classpath>
 	  <arg value="d"/>
       <arg value="-f"/>
@@ -27,6 +27,7 @@
 	  <arg value="${stamp.dir}"/>
 	  <arg value="-s"/>
 	  <arg value="${apk}"/>
+		<arg value="-o"/>
 	  <arg value="${stamp.out.dir}/apktool-out"/>
 	</java>
 
